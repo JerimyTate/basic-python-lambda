@@ -84,7 +84,7 @@ def lambda_handler(event, context):
     """
 
     message = get_message()
-
+    print("this is a message")
     return {
         "statusCode": 200,
         "body": json.dumps(message)
