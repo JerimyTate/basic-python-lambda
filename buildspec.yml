@@ -18,7 +18,6 @@ phases:
   install:
     commands:
       # Use Install phase to install packages or any pre-reqs you may need throughout the build (e.g. dev deps, security checks, etc.)
-      - pipenv lock -r > requirements.txt
       - pip install -r requirements.txt -t first_function/build/
       - cp -R first_function/app.py first_function/build/
   pre_build:
